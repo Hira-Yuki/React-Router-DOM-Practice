@@ -8,9 +8,11 @@ function Work() {
   const foundData = data.find((item) => {
     return item.id === parseInt(params.id);
   });
-  return <div>
-    <h3>할일 : {foundData.todo}</h3>
-  </div>;
+  return (
+    <div>
+      <h3>할일 : {foundData.todo}</h3>
+    </div>
+  );
 }
 
 export default Work;

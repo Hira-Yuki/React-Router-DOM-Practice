@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { data } from "../shared/data";
 
-
 function Works() {
   return (
     <div>
@@ -11,7 +10,6 @@ function Works() {
         return (
           <div key={cur.id}>
             {cur.id}&nbsp;
-            
             <Link to={`/works/${cur.id}`}>{cur.todo}</Link>
           </div>
         );
